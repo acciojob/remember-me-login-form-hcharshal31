@@ -25,6 +25,7 @@ let existing = document.getElementById("existing");
 existing.addEventListener("click", (ev)=>{
   let existingCredentials = localStorage.getItem("credentials");
   if(existingCredentials){
+	  existing.style.display="block";
     let prevUser = JSON.parse(existingCredentials);
     alert(`Logged in as ${prevUser.username}`);
   }else{
