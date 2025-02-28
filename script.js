@@ -16,6 +16,9 @@ form.addEventListener("submit", (ev)=>{
   }else{
     localStorage.clear();
   }
+
+	document.getElementById("username").value = "";
+	document.getElementById("password").value = "";
 });
 
 let existing = document.getElementById("existing");
